@@ -1,0 +1,64 @@
+/* Defaults */
+
+body, html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font: 16px/1.4 "Lucide Grande", Sans-Serif; /* 1em = 16 px */
+    color: #333333;
+}
+
+header, main, footer, div, section, article, nav {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Structuur */
+
+section, .hero {
+    /* tegen margin-collapse */
+    padding-top: 0.1px;
+    padding-bottom: 0.1px;
+}
+
+.wrapper {
+    max-width: 66.25em; /*1060 px */
+    margin: 0 auto;
+}
+
+/* Kleuren */
+
+header {
+    background-color: skyblue;
+}
+
+.topmenu {
+    background-color: #F7434E;
+}
+
+.mainmenu {
+    background-color: white;
+}
+
+.detailmenu {
+    background-color: #656E66;
+}
+
+main {
+    background-color: mistyrose;
+}
+
+footer {
+    background-color: darkslategray;
+    color: white;
+}
+
+.hero {
+   color: white; 
+}
