@@ -19,19 +19,6 @@ header, main, footer, div, section, article, nav {
     box-sizing: border-box;
 }
 
-/* Structuur */
-
-section, .hero {
-    /* tegen margin-collapse */
-    padding-top: 0.1px;
-    padding-bottom: 0.1px;
-}
-
-.wrapper {
-    max-width: 66.25em; /*1060 px */
-    margin: 0 auto;
-}
-
 /* Kleuren */
 
 header {
@@ -61,4 +48,190 @@ footer {
 
 .hero {
    color: white; 
+}
+
+/* Structuur */
+
+section, .hero {
+    /* tegen margin-collapse */
+    padding-top: 0.1px;
+    padding-bottom: 0.1px;
+}
+
+.wrapper {
+    max-width: 66.25em; /*1060 px */
+    margin: 0 auto;
+}
+
+.hero {
+    min-height: 45em; /* 720px */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url('../img/cactuslife_hero2.jpg');
+    position: relative;
+}
+
+.hero_content {
+    max-width: 56.25em; /* 900px */
+    margin: 0;
+    position: absolute;
+    bottom: 2em;
+}
+
+.hero_content h1 {
+    font-size: 4.2em;
+    line-height: 1.4;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.hero_content h2 {
+    font-size: 4em;
+    line-height: 1em;
+    font-variant: all-petite-caps;
+    margin: 0 0 1em 0;
+}
+
+.hor_menu {
+    list-style-type: none;
+}
+
+.hor_menu li {
+    display: inline-block;
+}
+
+.hor_menu a {
+    display: inline-block;
+    text-decoration: none;
+    line-height: 3;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Main menu */
+
+.mainmenu li {
+    float: left;
+}
+
+.mainmenu li a {
+    color: white;
+    padding: 0 2em;
+}
+
+.mainmenu li a:hover {
+    background-color: #FF6407;
+}
+
+.mainmenu li.active a {
+    color: #538A4E;
+    background-color: #F0EFEA;
+}
+
+.mainmenu li:first-child a {
+    padding-left: 1em;
+}
+
+/* Detailmenu */
+
+.detailmenu li {
+    padding: 0 1em;
+}
+
+.detailmenu li a {
+    color: black;
+}
+
+.detailmenu li a:hover {
+    text-decoration: underline;
+    color: #FF6407;
+}
+
+.detailmenu li.active a {
+    color: #FF6407; /* orange */
+    background-color: white;
+    line-height: 2.4;
+    border-radius: 4px;
+    margin: 0.4em;
+    padding: 0 1em;
+}
+
+.detailmenu li.active a:hover {
+    text-decoration: none;
+}
+
+.detailmenu li:first-child {
+    padding-left: 0;
+}
+
+.detailmenu li:first-child a {
+    margin-left: 0;
+}
+
+/* topmenu */
+
+.topmenu .links {
+    float: left;
+    text-align: left;
+    width: 50%;
+}
+
+.topmenu .rechts {
+    float: right;
+    text-align: right;
+    width: 50%;
+}
+
+/* General */
+
+.cactusLife_button {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 0.9em;
+    font-weight: 600;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    text-align: center;
+    display: inline-block;
+    background-color: #1DA1DB;
+    color: white;
+    border: 2px solid #1DA1DB;
+    border-radius: 3px;
+    padding: 1.6em 3.2em;
+    transition: all 0.5s;
+}
+
+.cactusLife_button:hover, .hor_menu .cactusLife_button:hover {
+    background-color: #60bde6;
+    border-color: #60bde6;
+    text-decoration:none;
+    color: white;
+}
+
+.hor_menu .cactusLife_button {
+    padding: 0 1em;
+    color: white;
+}
+
+.hero .cactusLife_button {
+    float: left;
+    margin-right: 2em;
+}
+
+/**
+ * Clear fix hack
+ */
+
+.cf:before, .cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
 }
