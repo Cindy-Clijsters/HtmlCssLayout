@@ -10,7 +10,7 @@ body {
     color: #333333;
 }
 
-header, main, footer, div, section, article, nav {
+header, main, footer, div, section, article, nav, .hor_menu {
     padding: 0;
     margin: 0;
     border: 0;
@@ -30,7 +30,7 @@ header {
 }
 
 .mainmenu {
-    background-color: white;
+    /*background-color: white;*/
 }
 
 .detailmenu {
